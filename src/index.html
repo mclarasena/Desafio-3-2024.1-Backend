@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <link rel="stylesheet" href="style.css" />
-  <!--carregar arquivo css-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--ajuste de tela em smartphones-->
-    <title>PokeApi</title>
-    <!--titulo da aba da pagina-->
-  </head>
-  <body>
-    <div class="pageContent">
-      <h2 id="name">Nome do Pokemon</h2>
-      <img
-        id="img_sprite_front_default"
-        src="../assets/missingno.png"
-        alt="Imagem do Pokemon"
-      />
-      <div>
-        <button id="previous" onclick="previousPokemon()">Anterior</button>
-        <button id="next" onclick="nextPokemon()">Proximo</button>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pokedex">
+    <div class="pokemon-info">
+      <h2 id="pokemon-name" class="pokemon-name"></h2>
+      <img id="pokemon-image" class="pokemon-image" src="" alt="Pokemon Image">
+      <p id="pokemon-abilities" class="pokemon-abilities"></p>
+      <p id="pokemon-versions" class="pokemon-versions"></p>
     </div>
-  </body>
-  <script src="script.js" type="text/javascript"></script>
-  <!--carregar arquivo js-->
+    <div class="navigation">
+      <button id="prevBtn" onclick="previousPokemon()">Anterior</button>
+      <button id="nextBtn" onclick="nextPokemon()">Próximo</button>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
 </html>
